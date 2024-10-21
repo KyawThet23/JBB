@@ -5,6 +5,7 @@ import java.util.Collection;
 
 public class CollectionsDemo {
 
+//testing
     public static void show(){
 
         Collection<String> collection = new ArrayList<>();
