@@ -2,6 +2,10 @@ package collections;
 
 import generic.GenericList;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -18,5 +22,10 @@ public class Main {
             System.out.println(current);
         }
 
+        List<Customer> customers = new ArrayList<>();
+        customers.add(new Customer("b","e1"));
+        customers.add(new Customer("a","e2"));
+        Collections.sort(customers,new EmailComparator());
+        System.out.println(customers.toString());
     }
 }
