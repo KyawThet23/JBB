@@ -2,6 +2,8 @@ package collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class CollectionsDemo {
 
@@ -14,5 +16,9 @@ public class CollectionsDemo {
         collection.add("3");
         for (var item : collection)
             System.out.println(item);
+
+        List<String> list = new ArrayList<>();
+        Collections.addAll(list,"a","b","c","d");
+        System.out.println(list.indexOf("c"));
     }
 }
