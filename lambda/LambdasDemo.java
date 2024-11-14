@@ -6,20 +6,17 @@ public class LambdasDemo {
         show();
     }
 
+    public static String prefix = "-";
+
     public static void show() {
 
         //lambda expression
-        greet((String message) -> {
-            System.out.println(message);
-        });
+        greet(message -> System.out.println(prefix + message));
 
-        //Anonymous inner class
-        greet(new Printer() {
-            @Override
-            public void print(String message) {
-                System.out.println(message);
-            }
-        });
+        // Method reference
+        // Class/Object::method
+        greet(MethodRef::print);
+
     }
 
     public static void greet(Printer printer){
