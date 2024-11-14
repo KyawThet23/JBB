@@ -17,6 +17,8 @@ public class LambdasDemo {
         // Class/Object::method
         greet(MethodRef::print);
 
+
+
     }
 
     public static void greet(Printer printer){
